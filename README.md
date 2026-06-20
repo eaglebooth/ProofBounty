@@ -4,6 +4,12 @@ AI-reviewed GitHub bounty payouts on GenLayer.
 
 One-line pitch: ProofBounty dies without GenLayer because its core product is an on-chain judgment about whether GitHub work actually satisfies a bounty before funds are released.
 
+## Submission Links
+
+- Live app: https://proofbounty.vercel.app
+- GitHub repo: https://github.com/eaglebooth/ProofBounty
+- GenLayer Studio contract: `0xD8198d115f33A118B878fb8824B7ea012D8Ef77e`
+
 ## Why GenLayer
 
 Open-source bounties and hackathon rewards often depend on subjective review: did the PR actually solve the issue, are tests included, is the work spam, and should the contributor receive full, partial, or no payout? A normal smart contract cannot read GitHub pages or evaluate code quality.
