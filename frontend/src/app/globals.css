@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #111113;
+  --soft-ink: #55575d;
+  --muted: #8a8d96;
+  --line: #e6e6e6;
+  --paper: #ffffff;
+  --wash: #f7f8f5;
+  --lime: #6dff18;
+  --lime-soft: #dcffd0;
+  --orange: #ff5b2e;
+  --panel: #f4f6f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 50% 24rem, rgba(109, 255, 24, 0.22), transparent 24rem),
+    linear-gradient(180deg, #ffffff 0%, #fbfcf8 52%, #ffffff 100%);
+  color: var(--ink);
+  font-family:
+    "Aptos",
+    "SF Pro Display",
+    "Segoe UI",
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--lime-soft);
+}
+
+.script {
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    "Snell Roundhand",
+    cursive;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.soft-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 28px 80px rgba(17, 17, 19, 0.08);
+}
+
+.lime-button {
+  background: var(--lime);
+  color: #050505;
+  box-shadow: 0 14px 32px rgba(109, 255, 24, 0.24);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.lime-button:hover {
+  background: #7bff30;
+  box-shadow: 0 18px 38px rgba(109, 255, 24, 0.32);
+  transform: translateY(-1px);
+}
+
+.media-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(17, 17, 19, 0.92), rgba(38, 41, 43, 0.9)),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-panel::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(135deg, rgba(109, 255, 24, 0.22), transparent 48%),
+    radial-gradient(circle at 80% 20%, rgba(255, 91, 46, 0.4), transparent 18rem);
+  mix-blend-mode: screen;
+}
+
+.timeline-line {
+  background: linear-gradient(180deg, var(--lime), #eeeeee 28%, #eeeeee 100%);
+}
