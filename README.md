@@ -35,15 +35,6 @@ ProofBounty/
   docs/design-guidelines/mediacore-extracted-design.md
 ```
 
-## Builder Program Score Path
-
-| Axis | Target | Evidence |
-|---|---:|---|
-| GenLayer fit | 5 | Core payout decision depends on reading GitHub evidence and subjective AI review. |
-| Contract quality | 4-5 | Guarded bounty lifecycle, partial payout logic, challenge path, deterministic JSON, and explicit errors. |
-| Engineering | 4 | Separate contract, frontend, tests, deploy script, and design documentation. |
-| Frontend / UX | 4 | Full flow for bounty creation, GitHub submission, AI review, and payout release. |
-
 ## Pre-Deploy Verification
 
 ```powershell
